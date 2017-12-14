@@ -1,0 +1,13 @@
+
+#MyViewController {
+    backGoundColor : NightMainBgColor;
+    navigationViewColor : MainTitleColor;
+    navigationViewTitleColor :  WhiteColor;
+    
+}
+
+#MyViewControllerUI {
+    
+    containerBgcolor : #708090;
+
+}

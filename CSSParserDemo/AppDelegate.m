@@ -7,16 +7,48 @@
 //
 
 #import "AppDelegate.h"
+#import "MyNavigationController.h"
+#import "MyHomeViewController.h"
+#import "UserSetting.h"
+
+#define lf_ColorRGB(r,a) [UIColor colorWithRed:(r>>16&0xff)/255. green:(r>>8&0xff)/255. blue:(r&0xff)/255. alpha:a]
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UIWindow *nightWindow;
 
 @end
 
 @implementation AppDelegate
 
+- (UIWindow *)nightWindow {
+    if (_nightWindow == nil) {
+        _nightWindow = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        _nightWindow.userInteractionEnabled = NO;
+        _nightWindow.backgroundColor = lf_ColorRGB(0x000000, 0.55);
+        _nightWindow.windowLevel = UIWindowLevelStatusBar;
+    }
+    return _nightWindow;
+}
+
+- (void)setNight {
+    self.nightWindow.hidden = !![UserSetting currentUserSettings].nightMode;
+}
+
+- (MyNavigationController *)navigationController {
+    
+    if (nil == _navigationController) {
+        MyHomeViewController *homeVC = [[MyHomeViewController alloc] init];
+        _navigationController = [[MyNavigationController alloc] initWithRootViewController:homeVC];
+    }
+    return _navigationController;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

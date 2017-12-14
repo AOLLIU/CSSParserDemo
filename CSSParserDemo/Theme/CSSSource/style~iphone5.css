@@ -1,0 +1,11 @@
+
+#QDCommonColor {
+    CommonYellow : qdYellowColor;
+    CommonTitleColor : qdMainTitleColor;
+    CommonWhite : qdWhiteColor;
+    CommonTextColor : qdMostTextColor;
+    CommonDescriptionColor : qdSecondaryTextColor;
+    CommonAssistTextColor : qdAssistTextColor;
+    CommonAssistViewColor : qdAssistPlugToolColor;
+    CommonGlobalSeparatorColor : qdMoreSeparateColor;
+}

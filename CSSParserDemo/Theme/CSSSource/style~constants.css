@@ -1,0 +1,16 @@
+
+#constants {
+    
+    /*Layout*/
+    CommonMargin    : 20;
+    NormalStatusBarWithNaviBar : 64;
+    iPhoneXStatusBarWithNaviBar : 88;
+    /*Color*/
+    YellowColor           : #ffc81f;
+    WhiteColor            : #ffffff;
+    MainTitleColor        : #212121;  /*文章标题,栏目名称,栏目图标底色等  #212121;   */
+    SecondaryTextColor    : #757575;  /*首页文章描述,分类,评论,喜欢,时间,订阅人数  #757575; */
+
+    NightMainBgColor  : #595959;
+    
+}

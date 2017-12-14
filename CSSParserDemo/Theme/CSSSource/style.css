@@ -1,0 +1,31 @@
+
+
+/*
+    需注意,css样式必须按下面样式写,空格要注意
+ */
+
+
+#MyViewController {
+    backGoundColor : WhiteColor;
+    navigationViewColor : SecondaryTextColor;
+    navigationViewTitleColor :  #000000;
+}
+
+
+#MyViewControllerUI {
+    
+    containerViewMarginTop : NormalStatusBarWithNaviBar;
+    containerViewMarginLeftAndRight : CommonMargin;
+    containerViewHeight : 280;
+    containerBgcolor :  #E6E6FA;
+    
+    imageVHeight : 200;
+    
+    titleLabelMarginTotop : 8;
+    titleLabelMarginToLeftRight : CommonMargin;
+    
+    subTitleLabelMarginTotop : 6;
+    subTitleLabelMarginToLeftRight : CommonMargin;
+    
+    
+}

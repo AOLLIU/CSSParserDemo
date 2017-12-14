@@ -1,0 +1,11 @@
+
+
+
+
+#MyViewControllerUI {
+    containerViewMarginTop : iPhoneXStatusBarWithNaviBar;
+    containerViewMarginLeftAndRight : 20;
+    containerViewHeight : 280;
+    
+    
+}
